@@ -1,3 +1,18 @@
-img{
+body{
+    background-color: #8d99ae;
     
+}
+
+img{
+    height: 200px;
+    cursor: pointer;
+    margin-left: 775px;
+    margin-top: 250px;
+    border: solid;
+    
+}
+
+#para{
+    text-align: center;
+    font-size: 50px;
 }

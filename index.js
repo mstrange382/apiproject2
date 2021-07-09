@@ -11,7 +11,7 @@ function calApi() {
       
   }
 
-  calApi();
+  
 
    function displayCal(response){
      console.log(response.response.holidays[0]);
