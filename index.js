@@ -27,6 +27,16 @@ function calApi() {
       }
  }
 
+ let section = document.querySelector(`section`);
+
+ nav.style.display = `none`;
+
+ let pageNumber = 0;
+  let displayNav = false;
+
+  nextBtn.addEventListener('click',nextPage);
+previousBtn.addEventListener('click',previousPage);
+
 
 
 
