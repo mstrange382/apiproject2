@@ -15,7 +15,7 @@ function calApi() {
 
    function displayCal(response){
      console.log(response.response.holidays[0]);
-     let days = response.response.holidays
+     let days = response.response.holidays;
      for (i = 0; i < days.length; i++){
         console.log(days[i].name);
          let dates = document.createElement('p');
@@ -35,7 +35,23 @@ function calApi() {
   let displayNav = false;
 
   nextBtn.addEventListener('click',nextPage);
-previousBtn.addEventListener('click',previousPage);
+  previousBtn.addEventListener('click',previousPage);
+
+  function previousPage(){
+    if (pageNumber > 0){
+      pageNumber--;
+    } else{
+      return;
+    }
+    calApi();
+    console.log('page:',  pageNumber);
+  };
+
+  function nextPage(){
+    pageNumber++;
+    calApi();
+    console.log('Page Number:', pageNumber);
+  };
 
 
 
